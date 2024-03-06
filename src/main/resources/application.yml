@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "bank-binding"
+  profiles: "default"
+  jpa:
+#    show-sql: true
+    properties:
+      hibernate.jdbc.batch_size: 5000
+
+database:
+  bank-binding:
+    jdbc-url: "jdbc:mysql://10.50.1.25:3307/ud_bank_function?useSSL=false&useUnicode=yes&characterEncoding=UTF-8"
+    username: "dbgtest"
+    password: "abc@123"
+    driver-class-name : org.mariadb.jdbc.Driver
+    maximum-pool-size: 24
